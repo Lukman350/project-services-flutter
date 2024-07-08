@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:app_car/custom_colors.dart';
-import 'bottom_nav_bar.dart'; // Import the bottom navigation bar
+import '../bottom_nav_bar.dart'; // Import the bottom navigation bar
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -21,7 +21,8 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(  // Wrap with SingleChildScrollView
+      body: SingleChildScrollView(
+        // Wrap with SingleChildScrollView
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,14 +34,14 @@ class _ProfilePageState extends State<ProfilePage> {
                 Container(
                   height: 300,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(40),
                       bottomRight: Radius.circular(40),
                     ),
                     color: CustomColors.primaryGreen,
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
@@ -64,7 +65,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     ],
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   top: 230,
                   child: CircleAvatar(
                     radius: 70,
@@ -78,9 +79,9 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ],
             ),
-            SizedBox(height: 90),
-            Padding(
-              padding: const EdgeInsets.all(25.0),
+            const SizedBox(height: 90),
+            const Padding(
+              padding: EdgeInsets.all(25.0),
               child: Row(
                 children: [
                   Icon(Icons.person),
@@ -98,7 +99,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Spacer(),
                   Text(
                     'Male',
-                    style: TextStyle(color: CustomColors.textGrey, fontSize: 15),
+                    style:
+                        TextStyle(color: CustomColors.textGrey, fontSize: 15),
                   ),
                   SizedBox(
                     width: 10,
@@ -110,8 +112,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 25, left: 25, top: 10),
+            const Padding(
+              padding: EdgeInsets.only(right: 25, left: 25, top: 10),
               child: Row(
                 children: [
                   Icon(Icons.calendar_month_outlined),
@@ -129,7 +131,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Spacer(),
                   Text(
                     '12-12-2002',
-                    style: TextStyle(color: CustomColors.textGrey, fontSize: 15),
+                    style:
+                        TextStyle(color: CustomColors.textGrey, fontSize: 15),
                   ),
                   SizedBox(
                     width: 10,
@@ -141,8 +144,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 25, left: 25, top: 35),
+            const Padding(
+              padding: EdgeInsets.only(right: 25, left: 25, top: 35),
               child: Row(
                 children: [
                   Icon(Icons.email_outlined),
@@ -160,7 +163,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Spacer(),
                   Text(
                     'khourul@gmail.com',
-                    style: TextStyle(color: CustomColors.textGrey, fontSize: 15),
+                    style:
+                        TextStyle(color: CustomColors.textGrey, fontSize: 15),
                   ),
                   SizedBox(
                     width: 10,
@@ -172,8 +176,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 25, left: 25, top: 35),
+            const Padding(
+              padding: EdgeInsets.only(right: 25, left: 25, top: 35),
               child: Row(
                 children: [
                   Icon(Icons.email_outlined),
@@ -191,7 +195,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Spacer(),
                   Text(
                     '08217829090',
-                    style: TextStyle(color: CustomColors.textGrey, fontSize: 15),
+                    style:
+                        TextStyle(color: CustomColors.textGrey, fontSize: 15),
                   ),
                   SizedBox(
                     width: 10,
@@ -203,8 +208,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 25, left: 25, top: 35),
+            const Padding(
+              padding: EdgeInsets.only(right: 25, left: 25, top: 35),
               child: Row(
                 children: [
                   Icon(Icons.lock_outline),
@@ -222,7 +227,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Spacer(),
                   Text(
                     '************',
-                    style: TextStyle(color: CustomColors.textGrey, fontSize: 15),
+                    style:
+                        TextStyle(color: CustomColors.textGrey, fontSize: 15),
                   ),
                   SizedBox(
                     width: 10,
